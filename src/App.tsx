@@ -48,7 +48,6 @@ import { useAppContext } from './context/AppContext';
 const AppContent: React.FC = () => {
   const { isLoading } = useAppContext();
   const location = useLocation();
-  const isLoginPage = location.pathname === '/login';
   const isNotFoundPage = location.pathname === '/404';
 
   return (
