@@ -88,16 +88,16 @@ const AppContent: React.FC = () => {
           <Route path="/pyramid/contact" element={<PyramidContact />} />
           <Route path="/spectrum/contact" element={<SpectrumContact />} />
 
-          <Route path="/contact" element={<ContactPage />} />
+          {/* <Route path="/contact" element={<ContactPage />} /> */}
 
-          <Route path="/login" element={<Login />} />
+          {/* <Route path="/login" element={<Login />} /> */}
           <Route path="/pyramid/course-registration" element={<PyramidCourseRegistration />} />
           <Route path="/spectrum/course-registration" element={<SpectrumCourseRegistration />} />
           <Route path="/404" element={<NotFoundPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
-      {!isLoginPage && !isNotFoundPage && <Footer />}
+      {!isNotFoundPage && <Footer />}
       <WhatsAppButton phoneNumber="917200655336" />
       {/* <AdPopupWrapper /> */}
     </div>
