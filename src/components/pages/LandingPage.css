@@ -61,7 +61,7 @@
         .hero-band .card-inner{
           position: relative;
           width: 100%;
-          height: 120%;
+          height: 105%;
           transform-style: preserve-3d;
           transition: transform 0.6s cubic-bezier(.2,.7,.3,1);
           cursor: pointer;
