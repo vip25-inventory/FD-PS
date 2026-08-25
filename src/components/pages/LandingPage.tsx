@@ -169,7 +169,7 @@ const LandingPage: React.FC = () => {
             tagline="Personalized tuition for students across all classes, with focused learning in Maths, Physics, Chemistry & Biology.
 Clear concepts, individual attention, and consistent guidance to help students learn better and perform with confidence."
             eyebrowBack=""
-            about="Spectrum delivers personalized, all-grades tuition tailored to every student's unique learning style. We build strong foundations in Math, Physics, Chemistry, and Biology through concept-focused teaching and dedicated individual attention."
+            about="Spectrum offers personalized tuition for all grades, focusing on strong foundations in Math, Physics, Chemistry, and Biology through concept-based teaching and individual attention."
             chips={["Maths", "Physics", "Chemistry" ,"Biology"]}
             bullets={[
                "All Classes – Comprehensive academic support across grades",
