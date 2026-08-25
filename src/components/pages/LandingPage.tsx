@@ -166,15 +166,17 @@ const LandingPage: React.FC = () => {
             logoAlt="Spectrum Tution Point"
             eyebrowFront="Academic Coaching &middot; Est. 2006"
             title="Spectrum"
-            tagline="IIT-JEE and NEET coaching for Vellore's science stream, built around structured teaching and regular assessment."
+            tagline="Personalized tuition for students across all classes, with focused learning in Maths, Physics, Chemistry & Biology.
+Clear concepts, individual attention, and consistent guidance to help students learn better and perform with confidence."
             eyebrowBack=""
             about="Coaching Vellore's science stream since 2006, with structured classroom teaching, weekly test series, and rank-focused mentoring built around the IIT-JEE and NEET syllabus."
-            chips={["IIT-JEE", "NEET", "Since 2006"]}
+            chips={["Maths", "Physics", "Chemistry" ,"Biology"]}
             bullets={[
-              "IIT-JEE — Foundation & Advanced batches",
-              "NEET — Physics, Chemistry & Biology",
-              "Weekly test series with rank analysis",
-              "Small batches with doubt-clearing sessions",
+               "All Classes – Comprehensive academic support across grades",
+"Maths & Science – Expert guidance in Maths, Physics, Chemistry & Biology.",
+"Regular Tests – Continuous assessments to track progress and improve performance.",
+"Exam-Focused Learning – Structured preparation to build confidence and achieve better results."
+
             ]}
             isFlipped={spectrumFlipped}
             visitPath="/spectrum"
