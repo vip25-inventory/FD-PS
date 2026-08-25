@@ -84,7 +84,7 @@
           padding: clamp(28px, 3.2vw, 36px);
           display: flex;
           flex-direction: column;
-          gap: 30px;
+          gap: 14px;
           overflow: hidden;
           transition: box-shadow 0.25s ease, border-color 0.25s ease;
         }
@@ -201,5 +201,4 @@
         .hero-band .card--pyramid .cta{ background: var(--grad-pyramid); color: var(--white); }
  @media (prefers-reduced-motion: reduce){
           .hero-band .card-inner{ transition: none; }
-         
         }
