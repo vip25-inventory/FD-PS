@@ -56,7 +56,7 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
 }) => {
   const label =
     variant === "spectrum"
-      ? "Spectrum. Press to view IIT-JEE and NEET programmes."
+      ? "Spectrum. Press to view Tuition programmes."
       : "Pyramid. Press to view Spoken English and professional development programmes.";
 
   return (
@@ -147,15 +147,15 @@ const LandingPage: React.FC = () => {
       {/* Intro */}
       <div className="container">
         <div className="intro text-center mx-auto">
-          <p className="intro__eyebrow">One Franchise &middot; Two Disciplines</p>
+          {/* <p className="intro__eyebrow">One Franchise &middot; Two Disciplines</p> */}
           <h1>
             Academic coaching and spoken English training, under one roof in{" "}
             <span>Vellore</span>.
           </h1>
-          <p>
+          {/* <p>
             Spectrum and Pyramid operate side by side as a single franchise.
             Select a programme below to view details.
-          </p>
+          </p> */}
         </div>
 
         {/* Cards */}
@@ -164,7 +164,7 @@ const LandingPage: React.FC = () => {
             variant="spectrum"
             logoSrc={LOGO_SPECTRUM}
             logoAlt="Spectrum Tution Point"
-            eyebrowFront="Academic Coaching &middot; Est. 2006"
+            eyebrowFront="Academic Coaching &middot;"
             title="Spectrum"
             tagline="Personalized tuition for students across all classes, with focused learning in Maths, Physics, Chemistry & Biology.
 Clear concepts, individual attention, and consistent guidance to help students learn better and perform with confidence."
