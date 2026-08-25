@@ -170,10 +170,10 @@ const OriginalLandingFooter: React.FC = () => {
 
             <p>
               © 2025 SPECTRUM by Pyramid Academy. All rights reserved |
-              {' '}Crafted by{' '}
+              {' '}Renovated By{' '}
 
               <a
-                href="https://scorpioninfotechsolutions.in"
+                href="https://vip25.online"
                 target="_blank"
                 rel="noreferrer"
                 style={{
@@ -182,7 +182,7 @@ const OriginalLandingFooter: React.FC = () => {
                   fontWeight: 'bold'
                 }}
               >
-                Scorpion Infotech Solutions
+                Vip25
               </a>
             </p>
 
