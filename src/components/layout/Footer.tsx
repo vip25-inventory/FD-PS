@@ -169,7 +169,7 @@ const OriginalLandingFooter: React.FC = () => {
           <div className="copyright">
 
             <p>
-              © 2025 SPECTRUM by Pyramid Academy. All rights reserved |
+              © 2026 Spectrum & Pyramid Academy. All rights reserved |
               {' '}Renovated By{' '}
 
               <a
