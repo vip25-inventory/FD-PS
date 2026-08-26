@@ -58,14 +58,25 @@ const SpectrumFooter: React.FC = () => {
 
             <ul>
               <li>
-                <Link to="/spectrum/SpectrumCoursesPage/spectrum/neet">
-                  NEET
+                <Link to="/spectrum/SpectrumCoursesPage/">
+                  Maths
                 </Link>
               </li>
 
               <li>
-                <Link to="/spectrum/SpectrumCoursesPage/spectrum/iit-jee">
-                  IIT-JEE
+                <Link to="/spectrum/SpectrumCoursesPage/">
+                  Physics
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/spectrum/SpectrumCoursesPage/">
+                  Chemistry
+                </Link>
+              </li>
+              <li>
+                <Link to="/spectrum/SpectrumCoursesPage/">
+                  Biology
                 </Link>
               </li>
             </ul>
@@ -153,11 +164,11 @@ const SpectrumFooter: React.FC = () => {
           <div className="copyright">
 
             <p>
-              © 2025 Spectrum by Pyramid Academy. All rights reserved |
-              {' '}Crafted by{' '}
+              © 2026 Spectrum All rights reserved |
+              {' '} Website Renovated by{' '}
 
               <a
-                href="https://scorpioninfotechsolutions.in"
+                href="https://www.vip25.online"
                 target="_blank"
                 rel="noreferrer"
                 style={{
@@ -166,7 +177,7 @@ const SpectrumFooter: React.FC = () => {
                   fontWeight: 'bold'
                 }}
               >
-                Scorpion Infotech Solutions
+                Vip25
               </a>
 
             </p>
