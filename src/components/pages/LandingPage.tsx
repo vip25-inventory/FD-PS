@@ -172,10 +172,10 @@ Clear concepts, individual attention, and consistent guidance to help students l
             about="Spectrum offers personalized tuition for all grades, focusing on strong foundations in Math, Physics, Chemistry, and Biology through concept-based teaching and individual attention."
             chips={["Maths", "Physics", "Chemistry" ,"Biology"]}
             bullets={[
-               "All Classes – Comprehensive academic support across grades",
-"Maths & Science – Expert guidance in Maths, Physics, Chemistry & Biology.",
-"Regular Tests – Continuous assessments to track progress and improve performance.",
-"Exam-Focused Learning – Structured preparation to build confidence and achieve better results."
+              'All Classes – Support for all grades.',
+'Maths & Science – Expert subject guidance.',
+'Regular Tests – Track and improve progress.',
+'Exam-Focused Learning – Prepare for better results.'
 
             ]}
             isFlipped={spectrumFlipped}
