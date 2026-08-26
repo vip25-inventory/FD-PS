@@ -1163,12 +1163,12 @@ const SpectrumHome: React.FC = () => {
         </section>
 
         {/* Testimonials Section */}
-        <section className="section testimonials">
+        {/* <section className="section testimonials">
           <div className="container">
-            <h2 className="section-title"><span className="highlight-testimonials">Testimonials</span> from our students</h2>
+            <h2 className="section-title"><span className="highlight-testimonials">Testimonials</span> from our students</h2> */}
 
             {/* Testimonial Carousel */}
-            <div className="testimonial-carousel">
+            {/* <div className="testimonial-carousel">
               <Carousel
                 key="testimonial-carousel"
                 activeIndex={testimonialIndex}
@@ -1184,7 +1184,7 @@ const SpectrumHome: React.FC = () => {
               </Carousel>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* FAQ Section */}
         <section className="section faq">
