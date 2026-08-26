@@ -20,8 +20,15 @@ const CourseHome = () => {
       <Helmet>
         <title>Academic & Skill Development Courses | SPECTRUM Education</title>
         <meta name="description" content="Discover SPECTRUM's comprehensive education offerings including competitive exam coaching and skill development courses. Excellence in education since 2006." />
-        <meta name="keywords" content="academic programs, NEET, IIT-JEE, spoken English, handwriting, calligraphy, personality development, SPECTRUM education" />
-        <link rel="canonical" href={getCanonicalUrl("/spectrum/SpectrumCoursesPage")} />
+<meta
+  name="keywords"
+  content="Best Tuition Centre in Vellore, CBSE Tuition in Vellore, ICSE Tuition, State Board Tuition, Maths Tuition, Physics Tuition, Chemistry Tuition, Biology Tuition, Board Exam Coaching"
+/> 
+<meta
+  name="description"
+  content="Best Tuition Centre in Vellore offering CBSE, ICSE and State Board tuition with expert coaching in Maths, Physics, Chemistry, Biology and board exam preparation."
+/>
+       <link rel="canonical" href={getCanonicalUrl("/spectrum/SpectrumCoursesPage")} />
       </Helmet>
       <main className="container">
         <Breadcrumbs
@@ -31,11 +38,14 @@ const CourseHome = () => {
         />
         <header className="page-header">
           <h1>Our Courses</h1>
-          <p>Specializing in academic excellence and creative development since 2006</p>
+          <p>Board-Specific Coaching
+Our programs are designed according to the latest syllabus and exam pattern of CBSE, ICSE, and State Board (Matriculation), ensuring students receive relevant and effective preparation.
+</p>
         </header>
+                    <h2>Explore <span className="text-black">Our Course</span> Categories</h2>
 
         <section className="section course-categories">
-          <h2>Explore <span className="text-black">Our Course</span> Categories</h2>
+          
 
           <div className="row g-4 mt-4">
             <div className="col-md-12">
@@ -44,24 +54,56 @@ const CourseHome = () => {
                   <div className="category-icon">
                     <i className="fas fa-atom"></i>
                   </div>
-                  <h3>Spectrum</h3>
+                  <h3>Board-Specific Coaching</h3>
                 </div>
                 <div className="category-content">
-                  <p className="text-center">Specialized coaching for competitive examinations</p>
+                </div>
+                <div className="course-features">
+                    <ul className="category-features">
+                      <li>CBSE Coaching – Curriculum-aligned, concept-focused learning with regular assessments.</li>
+                      <li>ICSE Coaching – Detailed subject coverage with analytical and conceptual learning.</li>
+                      <li>State Board Coaching – Structured lessons focused on fundamentals and exam performance.</li>
+                    </ul>
+                  </div>
+                <div className="category-footer text-center mt-auto">
+                  {/* <AnimatedButton
+                    text="Explore Spectrum Courses"
+                    href="/spectrum/SpectrumCoursesPage/spectrum"
+                    className="btn-category"
+                  /> */}
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section className="section course-categories">
+
+          <div className="row g-4 mt-4">
+            <div className="col-md-12">
+              <div className="category-card spectrum-card d-flex flex-column h-100">
+                <div className="category-header text-center mb-3">
+                  <div className="category-icon">
+                    <i className="fas fa-atom"></i>
+                  </div>
+                  <h3>Subject-Wise Coaching</h3>
+                </div>
+                <div className="category-content">
                   <div className="course-features">
                     <ul className="category-features">
-                      <li>NEET Preparation</li>
-                      <li>IIT-JEE Coaching</li>
-                      <li>Expert Faculty</li>
-                      <li>Comprehensive Study Materials</li>
-                      <li>Regular Performance Assessment</li>
+                      <li>Mathematics – Concept clarity, problem-solving, and exam strategies.</li>
+                      <li>Physics – Concepts, numerical practice, and applications.</li>
+                      <li>Chemistry – Simple explanations, revision, and complete subject coverage.</li>
+                      <li>Biology – Diagrams, concept mapping, and board-focused preparation.</li>
+                      
                     </ul>
                   </div>
                 </div>
                 <div className="category-footer text-center mt-auto">
                   <AnimatedButton
-                    text="Explore Spectrum Courses"
-                    href="/spectrum/SpectrumCoursesPage/spectrum"
+                    text="Enquire "
+                    href="/spectrum/course-registration/"
                     className="btn-category"
                   />
                 </div>
@@ -70,7 +112,6 @@ const CourseHome = () => {
 
           </div>
         </section>
-
         <section className="section why-choose-us">
           <h2><span className="text-black">Why</span> Choose Us?</h2>
 
@@ -179,7 +220,7 @@ const CourseHome = () => {
             <div className="cta-buttons">
               <CollisionButton
                 text="Contact Us"
-                href="/contact"
+                href="/spectrum/contact"
               />
             </div>
           </div>
@@ -357,850 +398,6 @@ const SpectrumPage: React.FC = () => {
 
 
 
-// ============================================================
-// NEET COURSE PAGE
-// ============================================================
-
-const NEETCoursePage: React.FC = () => {
-
-  return (
-
-    <div className="neet-courses">
-
-      <Helmet>
-
-        <title>
-          NEET Preparation Courses | SPECTRUM Education
-        </title>
-
-        <meta
-          name="description"
-          content="Join SPECTRUM's comprehensive NEET coaching program with expert faculty, regular tests, and proven results."
-        />
-
-        <meta
-          name="keywords"
-          content="NEET preparation, NEET coaching, medical entrance exam, NEET online coaching, SPECTRUM education"
-        />
-
-        <link
-          rel="canonical"
-          href={getCanonicalUrl(
-            "/spectrum/SpectrumCoursesPage/spectrum/neet"
-          )}
-        />
-
-      </Helmet>
-
-
-      <main className="container">
-
-
-        {/* Breadcrumb */}
-
-        <Breadcrumbs
-          customPaths={[
-            {
-              path: '/spectrum/SpectrumCoursesPage',
-              label: 'Courses'
-            },
-            {
-              path: '/spectrum/SpectrumCoursesPage/spectrum',
-              label: 'Spectrum'
-            },
-            {
-              path: '/spectrum/SpectrumCoursesPage/spectrum/neet',
-              label: 'NEET'
-            }
-          ]}
-        />
-
-
-
-        {/* Header */}
-
-        <header className="page-header">
-
-          <h1>
-            NEET Courses
-          </h1>
-
-          <p>
-            Comprehensive Medical Entrance Exam Preparation
-          </p>
-
-        </header>
-
-
-
-        {/* ==================================================
-            ONLINE COACHING
-        ================================================== */}
-
-        <section className="section online-coaching">
-
-          <div className="row g-4 align-items-center">
-
-
-            <div className="col-lg-6 col-md-12">
-
-              <div className="online-coaching-content">
-
-                <h2 className="text-center">
-
-                  Online Coaching for{' '}
-
-                  <span>
-                    NEET
-                  </span>
-
-                </h2>
-
-
-                <div className="d-flex align-items-start mb-3">
-
-                  <div className="trophy-icon">
-
-                    <i className="fas fa-trophy text-primary"></i>
-
-                  </div>
-
-
-                  <p>
-
-                    NEET Online Coaching by SPECTRUM is
-                    perfect for students focused on{' '}
-
-                    <span className="fw-bold">
-                      achieving their goals
-                    </span>.
-
-                  </p>
-
-                </div>
-
-
-
-                <div className="d-flex align-items-start mb-4">
-
-                  <div className="award-icon">
-
-                    <i className="fas fa-award text-primary"></i>
-
-                  </div>
-
-
-                  <p>
-
-                    With{' '}
-
-                    <span className="fw-bold">
-                      SPECTRUM's expert faculty
-                    </span>{' '}
-
-                    and{' '}
-
-                    <span className="fw-bold">
-                      a result-oriented learning platform
-                    </span>,
-
-                    you're not just studying—you're
-                    improving every single day.
-
-                  </p>
-
-                </div>
-
-
-
-                <div className="d-flex justify-content-center mt-4">
-
-                  <AnimatedButton
-                    text="Enroll Now"
-                    href="https://careerpoint.ac.in/center/vellore"
-                    className="neet-contact-btn"
-                  />
-
-                </div>
-
-              </div>
-
-            </div>
-
-
-
-            <div className="col-lg-6 col-md-12">
-
-              <div className="online-coaching-image">
-
-                <img
-                  src="/images/banner/neet.webp"
-                  alt="SPECTRUM's Expert NEET Online Coaching Program"
-                  className="img-fluid"
-                />
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </section>
-
-
-
-        {/* ==================================================
-            TOPPERS + RESULTS
-        ================================================== */}
-
-        <section className="section neet-toppers-results">
-
-          <div className="row g-4">
-
-
-            {/* Toppers */}
-
-            <div className="col-lg-5 col-md-12">
-
-              <div className="toppers-container">
-
-                <h2>
-
-                  Toppers choose{' '}
-
-                  <span className="text-success">
-                    SPECTRUM
-                  </span>
-
-                </h2>
-
-
-                <div className="toppers-gallery">
-
-
-                  {/* Aditya */}
-
-                  <div className="topper-profile side text-center side-lowered">
-
-                    <div className="topper-image">
-
-                      <img
-                        src="/images/users/neet-1.jpg"
-                        alt="NEET Topper Aditya S"
-                        className="rounded-circle"
-                      />
-
-                    </div>
-
-                    <h3 className="mt-2 mb-0">
-                      Aditya S
-                    </h3>
-
-                  </div>
-
-
-
-                  {/* Priya */}
-
-                  <div className="topper-profile center text-center">
-
-                    <div className="topper-image">
-
-                      <img
-                        src="/images/users/neet-2.png"
-                        alt="NEET Topper Priya"
-                        className="rounded-circle"
-                      />
-
-                    </div>
-
-                    <h3 className="mt-2 mb-0">
-                      Priya
-                    </h3>
-
-                  </div>
-
-
-
-                  {/* Rahul */}
-
-                  <div className="topper-profile side text-center side-lowered">
-
-                    <div className="topper-image">
-
-                      <img
-                        src="/images/users/neet-3.png"
-                        alt="NEET Topper Rahul V"
-                        className="rounded-circle"
-                      />
-
-                    </div>
-
-                    <h3 className="mt-2 mb-0">
-                      Rahul V
-                    </h3>
-
-                  </div>
-
-
-                </div>
-
-
-
-                <div className="text-center mt-4">
-
-                  <CollisionButton
-                    text="Enquire Now"
-                    href="https://careerpoint.ac.in/center/vellore"
-                    className="px-4"
-                  />
-
-                </div>
-
-              </div>
-
-            </div>
-
-
-
-            {/* Results */}
-
-            <div className="col-lg-7 col-md-12">
-
-              <div className="results-container">
-
-                <h2>
-
-                  Outstanding{' '}
-
-                  <span className="text-primary">
-                    NEET
-                  </span>{' '}
-
-                  <span className="text-success">
-                    100% results
-                  </span>{' '}
-
-                  consistently
-
-                </h2>
-
-
-                <div className="row g-4 mt-3">
-
-
-                  <div className="col-md-6">
-
-                    <div className="result-stat-card border-success">
-
-                      <h3 className="text-success fs-1 mb-0">
-                        35,825
-                      </h3>
-
-                      <p className="mb-0">
-                        Eligible in NEET mains
-                      </p>
-
-                    </div>
-
-                  </div>
-
-
-
-                  <div className="col-md-6">
-
-                    <div className="result-stat-card border-primary">
-
-                      <h3 className="text-primary fs-1 mb-0">
-                        12,540
-                      </h3>
-
-                      <p className="mb-0">
-                        Qualified for medical admissions
-                      </p>
-
-                    </div>
-
-                  </div>
-
-
-
-                  <div className="col-md-6">
-
-                    <div className="result-stat-card border-primary">
-
-                      <h3 className="text-primary fs-1 mb-0">
-                        65
-                      </h3>
-
-                      <p className="mb-0">
-                        Students in top 100
-                      </p>
-
-                    </div>
-
-                  </div>
-
-
-
-                  <div className="col-md-6">
-
-                    <div className="result-stat-card border-success">
-
-                      <h3 className="text-success fs-1 mb-0">
-                        120
-                      </h3>
-
-                      <p className="mb-0">
-                        Students in top 200
-                      </p>
-
-                    </div>
-
-                  </div>
-
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </section>
-
-
-      </main>
-
-    </div>
-
-  );
-};
-
-
-
-// ============================================================
-// JEE COURSE PAGE
-// ============================================================
-
-const JEECoursePage: React.FC = () => {
-
-  return (
-
-    <div className="jee-courses">
-
-      <Helmet>
-
-        <title>
-          IIT-JEE Preparation Courses | SPECTRUM Education
-        </title>
-
-        <meta
-          name="description"
-          content="Prepare for IIT-JEE with SPECTRUM's expert coaching programs focusing on conceptual clarity and proven preparation strategies."
-        />
-
-        <meta
-          name="keywords"
-          content="IIT-JEE preparation, JEE coaching, engineering entrance exam, JEE Main, JEE Advanced, SPECTRUM education"
-        />
-
-        <link
-          rel="canonical"
-          href={getCanonicalUrl(
-            "/spectrum/SpectrumCoursesPage/spectrum/iit-jee"
-          )}
-        />
-
-      </Helmet>
-
-
-
-      <div className="container">
-
-
-        {/* Breadcrumb */}
-
-        <Breadcrumbs
-          customPaths={[
-            {
-              path: '/spectrum/SpectrumCoursesPage',
-              label: 'Courses'
-            },
-            {
-              path: '/spectrum/SpectrumCoursesPage/spectrum',
-              label: 'Spectrum'
-            },
-            {
-              path: '/spectrum/SpectrumCoursesPage/spectrum/iit-jee',
-              label: 'IIT-JEE'
-            }
-          ]}
-        />
-
-
-
-        {/* Header */}
-
-        <div className="page-header">
-
-          <h1>
-            IIT-JEE Courses
-          </h1>
-
-          <p>
-            Comprehensive Engineering Entrance Exam Preparation
-          </p>
-
-        </div>
-
-
-
-        {/* ==================================================
-            ONLINE COACHING
-        ================================================== */}
-
-        <div className="section online-coaching">
-
-          <div className="row g-4 align-items-center">
-
-
-            <div className="col-lg-6 col-md-12">
-
-              <div className="online-coaching-content">
-
-                <h2 className="text-center">
-
-                  Online Coaching for{' '}
-
-                  <span>
-                    IIT-JEE
-                  </span>
-
-                </h2>
-
-
-                <div className="d-flex align-items-start mb-3">
-
-                  <div className="trophy-icon">
-
-                    <i className="fas fa-trophy text-primary"></i>
-
-                  </div>
-
-
-                  <p>
-
-                    IIT-JEE Online Coaching by SPECTRUM
-                    is perfect for students focused on{' '}
-
-                    <span className="fw-bold">
-                      achieving their engineering dreams
-                    </span>.
-
-                  </p>
-
-                </div>
-
-
-
-                <div className="d-flex align-items-start mb-4">
-
-                  <div className="award-icon">
-
-                    <i className="fas fa-award text-primary"></i>
-
-                  </div>
-
-
-                  <p>
-
-                    With{' '}
-
-                    <span className="fw-bold">
-                      SPECTRUM's expert faculty
-                    </span>{' '}
-
-                    and{' '}
-
-                    <span className="fw-bold">
-                      a result-oriented learning platform
-                    </span>,
-
-                    you're not just studying—you're improving
-                    every single day.
-
-                  </p>
-
-                </div>
-
-
-
-                <div className="d-flex mt-4">
-
-                  <AnimatedButton
-                    text="Enroll Now"
-                    href="https://careerpoint.ac.in/center/vellore"
-                    className="jee-callback-btn me-3"
-                  />
-
-                </div>
-
-              </div>
-
-            </div>
-
-
-
-            <div className="col-lg-6 col-md-12">
-
-              <div className="online-coaching-image">
-
-                <img
-                  src="/images/banner/iit-jee.jpg"
-                  alt="SPECTRUM's IIT-JEE Online Coaching"
-                  className="img-fluid"
-                />
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-
-        {/* ==================================================
-            TOPPERS + RESULTS
-        ================================================== */}
-
-        <div className="section jee-toppers-results">
-
-          <div className="row g-4">
-
-
-            {/* Toppers */}
-
-            <div className="col-lg-5 col-md-12">
-
-              <div className="toppers-container">
-
-                <h2>
-
-                  Toppers choose{' '}
-
-                  <span className="text-success">
-                    SPECTRUM
-                  </span>
-
-                </h2>
-
-
-                <div className="toppers-gallery">
-
-
-                  {/* Ankit */}
-
-                  <div className="topper-profile side text-center side-lowered">
-
-                    <div className="topper-image">
-
-                      <img
-                        src="/images/users/iit-1.png"
-                        alt="JEE Topper Ankit K"
-                        className="rounded-circle"
-                      />
-
-                    </div>
-
-                    <h3 className="mt-2 mb-0">
-                      Ankit K
-                    </h3>
-
-                  </div>
-
-
-
-                  {/* Vikram */}
-
-                  <div className="topper-profile center text-center">
-
-                    <div className="topper-image">
-
-                      <img
-                        src="/images/users/iit-2.png"
-                        alt="JEE Topper Vikram"
-                        className="rounded-circle"
-                      />
-
-                    </div>
-
-                    <h3 className="mt-2 mb-0">
-                      Vikram
-                    </h3>
-
-                  </div>
-
-
-
-                  {/* Nisha */}
-
-                  <div className="topper-profile side text-center side-lowered">
-
-                    <div className="topper-image">
-
-                      <img
-                        src="/images/users/iit-3.jpg"
-                        alt="JEE Topper Nisha P"
-                        className="rounded-circle"
-                      />
-
-                    </div>
-
-                    <h3 className="mt-2 mb-0">
-                      Nisha P
-                    </h3>
-
-                  </div>
-
-
-                </div>
-
-
-
-                <div className="text-center mt-4">
-
-                  <CollisionButton
-                    text="Enquire Now"
-                    href="https://careerpoint.ac.in/center/vellore"
-                    className="px-4"
-                  />
-
-                </div>
-
-              </div>
-
-            </div>
-
-
-
-            {/* Results */}
-
-            <div className="col-lg-7 col-md-12">
-
-              <div className="results-container">
-
-                <h2>
-
-                  Outstanding{' '}
-
-                  <span className="text-primary">
-                    IIT-JEE
-                  </span>{' '}
-
-                  <span className="text-success">
-                    100% results
-                  </span>{' '}
-
-                  consistently
-
-                </h2>
-
-
-                <div className="row g-4 mt-3">
-
-
-                  <div className="col-md-6">
-
-                    <div className="result-stat-card border-success">
-
-                      <h3 className="text-success fs-1 mb-0">
-                        42,750
-                      </h3>
-
-                      <p className="mb-0">
-                        Eligible in JEE Main
-                      </p>
-
-                    </div>
-
-                  </div>
-
-
-
-                  <div className="col-md-6">
-
-                    <div className="result-stat-card border-primary">
-
-                      <h3 className="text-primary fs-1 mb-0">
-                        15,280
-                      </h3>
-
-                      <p className="mb-0">
-                        Qualified for JEE Advanced
-                      </p>
-
-                    </div>
-
-                  </div>
-
-
-
-                  <div className="col-md-6">
-
-                    <div className="result-stat-card border-primary">
-
-                      <h3 className="text-primary fs-1 mb-0">
-                        45
-                      </h3>
-
-                      <p className="mb-0">
-                        Students in top 100
-                      </p>
-
-                    </div>
-
-                  </div>
-
-
-
-                  <div className="col-md-6">
-
-                    <div className="result-stat-card border-success">
-
-                      <h3 className="text-success fs-1 mb-0">
-                        95
-                      </h3>
-
-                      <p className="mb-0">
-                        Students in top 200
-                      </p>
-
-                    </div>
-
-                  </div>
-
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-      </div>
-
-    </div>
-
-  );
-};
 
 
 
@@ -1291,20 +488,14 @@ const SpectrumCoursesPage: React.FC = () => {
             NEET
         ================================================== */}
 
-        <Route
-          path="spectrum/neet"
-          element={<NEETCoursePage />}
-        />
+     
 
 
         {/* ==================================================
             IIT-JEE
         ================================================== */}
 
-        <Route
-          path="spectrum/iit-jee"
-          element={<JEECoursePage />}
-        />
+      
 
 
         {/* ==================================================
