@@ -661,29 +661,20 @@ const SpectrumHome: React.FC = () => {
                 </p>
                 <AnimatedButton
                   text="Contact Us"
-                  href="/contact#message-form"
+                  href="/spectrum/contact"
                   className="contact-us-animated-btn"
                 />
               </div>
               <div className="col-lg-6">
                 <div className="hero-tabs">
                   <div className="tabs-header">
-                    <button
-                      className={`tab-btn ${activeTab === 'online' ? 'active' : ''}`}
-                      onClick={() => handleTabChange('online')}
-                    >
-                      Online Courses
-                    </button>
-                    <button
-                      className={`tab-btn ${activeTab === 'offline' ? 'active' : ''}`}
-                      onClick={() => handleTabChange('offline')}
-                    >
-                      Offline Courses
-                    </button>
+                    
+                      <h5><strong>Online & Offline Available</strong></h5>
+                    
                   </div>
                   <div className="tabs-content">
                     <div className={`tab-content ${activeTab === 'online' ? 'active' : ''} ${tabDirection}`}>
-                      <h3>Discover the perfect online course</h3>
+
 
                       <div
                         className="course-carousel position-relative"
@@ -694,9 +685,8 @@ const SpectrumHome: React.FC = () => {
                         <div className="course-options">
                           {/* We'll only show the first 2 visible cards at a time */}
                           {[
-                            { name: '6th-10th Tution Classes', href: '/courses/neet' },
-                            { name: '11th & 12th Tution Classes', href: '/courses/iit-jee' },
-                            { name: '10th & 12th Board', href: '/courses/pyramid/power-program' }
+                            { name: '6th to 10th Tution Classes', href: '/spectrum/contact' },
+                            { name: '11th & 12th Tution Classes', href: '/spectrum/contact' }
                           ].map((course, index) => (
                             <div
                               key={`online-${index}`}
@@ -706,7 +696,7 @@ const SpectrumHome: React.FC = () => {
                             >
                               <h4>{course.name}</h4>
                               <CollisionButton
-                                text="View"
+                                text="Enquire"
                                 href={course.href}
                               />
                             </div>
@@ -771,149 +761,6 @@ const SpectrumHome: React.FC = () => {
                           type="button"
                           onClick={() => {
                             const items = document.querySelectorAll('[data-tab="online"].course-option');
-                            const totalItems = items.length;
-                            const visibleItems = Array.from(items).filter(item => !item.classList.contains('d-none'));
-                            const lastVisibleIndex = parseInt(visibleItems[visibleItems.length - 1].getAttribute('data-course-index') || '0');
-
-                            if (lastVisibleIndex < totalItems - 1) {
-                              // Not at the end, go to next items
-                              items.forEach((item, idx) => {
-                                const element = item as HTMLElement;
-                                if (window.innerWidth >= 768) {
-                                  // On larger screens, we show 2 cards
-                                  if (idx > lastVisibleIndex && idx <= lastVisibleIndex + 2) {
-                                    element.classList.remove('d-none');
-                                  } else {
-                                    element.classList.add('d-none');
-                                  }
-                                } else {
-                                  // On smaller screens, we show 1 card
-                                  if (idx === lastVisibleIndex + 1) {
-                                    element.classList.remove('d-none');
-                                  } else {
-                                    element.classList.add('d-none');
-                                  }
-                                }
-                              });
-                            } else {
-                              // At the end, loop to the beginning
-                              items.forEach((item, idx) => {
-                                const element = item as HTMLElement;
-                                if (window.innerWidth >= 768) {
-                                  // On larger screens, show first 2 cards
-                                  if (idx < 2) {
-                                    element.classList.remove('d-none');
-                                  } else {
-                                    element.classList.add('d-none');
-                                  }
-                                } else {
-                                  // On smaller screens, show first card
-                                  if (idx === 0) {
-                                    element.classList.remove('d-none');
-                                  } else {
-                                    element.classList.add('d-none');
-                                  }
-                                }
-                              });
-                            }
-                          }}
-                        >
-                          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span className="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                    </div>
-                    <div className={`tab-content ${activeTab === 'offline' ? 'active' : ''} ${tabDirection}`}>
-                      <h3>Explore our offline classroom programs</h3>
-
-                      <div
-                        className="course-carousel position-relative"
-                        ref={offlineCarouselRef}
-                        onMouseEnter={() => setOfflineCarouselHovered(true)}
-                        onMouseLeave={() => setOfflineCarouselHovered(false)}
-                      >
-                        <div className="course-options">
-                          {/* We'll only show the first 2 visible cards at a time */}
-                          {[
-                            { name: 'NEET', href: '/courses/neet' },
-                            { name: 'IIT-JEE', href: '/courses/iit-jee' },
-                            { name: 'Spoken English', href: '/courses/english' },
-                            { name: 'Foundation Program', href: '/courses/pyramid/foundation' },
-                            { name: '10th & 12th Board', href: '/courses/pyramid/power-program' }
-                          ].map((course, index) => (
-                            <div
-                              key={`offline-${index}`}
-                              className="course-option"
-                              data-course-index={index}
-                              data-tab="offline"
-                            >
-                              <h4>{course.name}</h4>
-                              <CollisionButton
-                                text="View"
-                                href={course.href}
-                              />
-                            </div>
-                          ))}
-                        </div>
-                        <button
-                          className="carousel-control-prev course-control"
-                          type="button"
-                          onClick={() => {
-                            const items = document.querySelectorAll('[data-tab="offline"].course-option');
-                            const currentVisible = Array.from(items).findIndex(item => !item.classList.contains('d-none'));
-                            const totalItems = items.length;
-
-                            if (currentVisible > 0) {
-                              // Not at the beginning, go to previous items
-                              items.forEach((item, idx) => {
-                                const element = item as HTMLElement;
-                                if (window.innerWidth >= 768) {
-                                  // On larger screens, we show 2 cards
-                                  if (idx >= currentVisible - 2 && idx < currentVisible) {
-                                    element.classList.remove('d-none');
-                                  } else {
-                                    element.classList.add('d-none');
-                                  }
-                                } else {
-                                  // On smaller screens, we show 1 card
-                                  if (idx === currentVisible - 1) {
-                                    element.classList.remove('d-none');
-                                  } else {
-                                    element.classList.add('d-none');
-                                  }
-                                }
-                              });
-                            } else {
-                              // At the beginning, loop to the end
-                              items.forEach((item, idx) => {
-                                const element = item as HTMLElement;
-                                if (window.innerWidth >= 768) {
-                                  // On larger screens, show last 2 cards
-                                  if (idx >= totalItems - 2) {
-                                    element.classList.remove('d-none');
-                                  } else {
-                                    element.classList.add('d-none');
-                                  }
-                                } else {
-                                  // On smaller screens, show last card
-                                  if (idx === totalItems - 1) {
-                                    element.classList.remove('d-none');
-                                  } else {
-                                    element.classList.add('d-none');
-                                  }
-                                }
-                              });
-                            }
-                          }}
-                        >
-                          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span className="visually-hidden">Previous</span>
-                        </button>
-                        <button
-                          className="carousel-control-next course-control"
-                          type="button"
-                          onClick={() => {
-                            const items = document.querySelectorAll('[data-tab="offline"].course-option');
                             const totalItems = items.length;
                             const visibleItems = Array.from(items).filter(item => !item.classList.contains('d-none'));
                             const lastVisibleIndex = parseInt(visibleItems[visibleItems.length - 1].getAttribute('data-course-index') || '0');
