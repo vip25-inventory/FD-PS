@@ -91,16 +91,25 @@ const OriginalLandingFooter: React.FC = () => {
 
             <ul>
               <li>
-                <Link to="/contact">
-                  Contact Us
+                <Link to="/spectrum/contact">
+                  Spectrum
+                </Link>
+              </li>
+              <li>
+                <Link to="/spectrum/contact">
+                  Pyramid
                 </Link>
               </li>
 
-              <li>
-                <Link to="/course-registration">
-                  Register For Course
-                </Link>
-              </li>
+              
+            </ul>
+          </div>
+
+          <div className="footer-column">
+            <h4>Course Registration</h4>
+            <ul>
+              <li><Link to="/pyramid/course-registration">Pyramid</Link></li>
+              <li><Link to="/spectrum/course-registration">Spectrum</Link></li>
             </ul>
           </div>
 
@@ -169,11 +178,11 @@ const OriginalLandingFooter: React.FC = () => {
           <div className="copyright">
 
             <p>
-              © 2026 Spectrum & Pyramid Academy. All rights reserved |
-              {' '}Renovated By{' '}
+              © 2025 SPECTRUM by Pyramid Academy. All rights reserved |
+              {' '}Crafted by{' '}
 
               <a
-                href="https://vip25.online"
+                href="https://scorpioninfotechsolutions.in"
                 target="_blank"
                 rel="noreferrer"
                 style={{
@@ -182,7 +191,7 @@ const OriginalLandingFooter: React.FC = () => {
                   fontWeight: 'bold'
                 }}
               >
-                Vip25
+                Scorpion Infotech Solutions
               </a>
             </p>
 
