@@ -328,6 +328,7 @@ html body .home-page p {
   display: flex;
   border-bottom: 1px solid #eee;
   margin-bottom: 20px;
+  justify-content: center;
 }
 
 /* Specific selector for tab buttons in the hero section */
